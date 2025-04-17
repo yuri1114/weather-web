@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: url(../src/assets/background.jpg) no-repeat center / 100% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-container {
+  width: 400px;
+  height: 300px;
+  background: rgba($color: #000000, $alpha: 0.4);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.weather-box {
+  margin-bottom: 3.125rem;
+  p {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  .position {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    font-weight: 700;
+  }
+
+  .weather {
+    font-size: 1rem;
+    line-height: 2.125rem;
+  }
+}
+.btn-wrap {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  button {
+    border: 0;
+    background: transparent;
+    width: fit-content;
+    min-width: fit-content;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    line-height: 2.1875rem;
+    color: #fff;
+    &:focus,
+    &:hover {
+      background: #fff;
+      color: #000000;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
